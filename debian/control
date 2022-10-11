@@ -1,0 +1,73 @@
+Source: libparanamer-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ default-jdk-doc,
+ junit4,
+ libasm-java (>= 5.0),
+ libatinject-jsr330-api-java,
+ libmaven-bundle-plugin-java,
+ libmaven-dependency-plugin-java,
+ libmaven-javadoc-plugin-java,
+ libmaven-plugin-tools-java,
+ libmaven3-core-java,
+ libmockito-java,
+ libqdox2-java,
+ maven-debian-helper
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/java-team/libparanamer-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libparanamer-java
+Homepage: https://github.com/paul-hammant/paranamer
+
+Package: libparanamer-java
+Architecture: all
+Depends:
+ ${misc:Depends}
+Suggests:
+ libatinject-jsr330-api-java,
+ libparanamer-java-doc
+Description: Java library to access method parameter names at runtime
+ Paranamer is a library that allows the parameter names of non-private methods
+ and constructors to be accessed at runtime. Normally this information is
+ dropped by the compiler. With the advent of advanced scripting languages and
+ web action frameworks for the Java Virtual Machine it is of increasing
+ importance to be able to leverage a method's parameter names. Scripting
+ languages like Groovy & JRuby, web action frameworks like Waffle and VRaptor
+ and the compelling Grails as well as SOAP and REST designs could also benefit.
+
+Package: libparanamer-maven-plugin-java
+Architecture: all
+Depends:
+ libasm-java (>= 5.0),
+ libparanamer-java,
+ libqdox2-java,
+ ${misc:Depends}
+Description: Paranamer Maven Plugin
+ Paranamer is a library that allows the parameter names of non-private methods
+ and constructors to be accessed at runtime. Normally this information is
+ dropped by the compiler. With the advent of advanced scripting languages and
+ web action frameworks for the Java Virtual Machine it is of increasing
+ importance to be able to leverage a method's parameter names. Scripting
+ languages like Groovy & JRuby, web action frameworks like Waffle and VRaptor
+ and the compelling Grails as well as SOAP and REST designs could also benefit.
+ .
+ This package contains the paranamer-maven-plugin and its dependency
+ paranamer-generator.
+
+Package: libparanamer-java-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends}
+Suggests:
+ default-jdk-doc
+Description: Java library to access method parameter names at runtime -- docs
+ Paranamer is a library that allows the parameter names of non-private methods
+ and constructors to be accessed at runtime.
+ .
+ This package contains the Javadoc API documentation for libparanamer-java.

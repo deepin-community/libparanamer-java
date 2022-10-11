@@ -1,0 +1,9 @@
+
+com.thoughtworks.paranamer paranamer * * javadoc *
+net.sourceforge.f2j arpack_combined_all * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.apache.maven.wagon wagon-webdav * * * *
+org.apache.maven.plugins maven-antrun-plugin * * * *
+org.apache.maven.plugins maven-assembly-plugin * * * *
+org.apache.maven.plugins maven-plugin-plugin * * * *
+com.thoughtworks.paranamer paranamer-maven-plugin * * * *

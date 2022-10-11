@@ -1,0 +1,2 @@
+
+com.thoughtworks.paranamer paranamer s/jar/bundle/ s/.*/debian/ * *

@@ -1,0 +1,5 @@
+junit junit jar s/4\..*/4.x/ * *
+org.apache.maven maven-* * s/.*/3.x/ * *
+org.mockito s/mockito-all/mockito-core/ * s/.*/debian/ * *
+com.thoughtworks.qdox qdox * s/.*/2.x/ * *
+com.thoughtworks.paranamer paranamer-maven-plugin * s/.*/debian/ * *
